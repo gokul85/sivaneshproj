@@ -1,0 +1,90 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: "Poppins", sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh; 
+}   
+
+.section-container{
+    @apply max-w-screen-2xl container mx-auto xl:px-24;
+  }
+code{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.heartStar{
+    border-radius: 0px 28px 0px 28px;
+  }
+
+/* styles.css */
+.card-row {
+    display: flex;
+    flex-direction: row;
+    gap: 16px;
+    padding: 16px;
+    overflow-x: auto; /* This allows horizontal scrolling if needed */
+}
+
+.card {
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 16px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    min-width: 200px; /* Ensures that the cards have a minimum width */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.card-image {
+    max-width: 100%;
+    border-radius: 8px;
+    margin-bottom: 16px;
+}
+
+.card h3 {
+    margin: 0 0 8px;
+    
+}
+
+.card p {
+    margin: 0 0 16px;
+}
+
+.card-buttons {
+    display: flex;
+    gap: 8px;
+    margin-top: auto;
+}
+
+.card-button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    padding: 8px 16px;
+    cursor: pointer;
+    text-transform: uppercase;
+}
+
+.card-button:hover {
+    background-color: #0056b3;
+}
+
+.like-button {
+    background-color: #28a745;
+}
+
+.like-button:hover {
+    background-color: #218838;
+}
