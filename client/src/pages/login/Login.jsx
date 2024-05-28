@@ -21,7 +21,7 @@ const Login = () => {
   }, []);
   const HandleSubmit = () => {
     if (email != "" && password != "") {
-      axios.post("http://localhost:5000/api/auth/login",
+      axios.post("/api/auth/login",
         {
           email: email,
           password: password,

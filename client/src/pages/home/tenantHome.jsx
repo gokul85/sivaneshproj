@@ -27,7 +27,7 @@ const TenantHome = () => {
 
   const fetchListings = () => {
     setLoading(true);
-    axios.get('http://localhost:5000/api/properties/', {
+    axios.get('/api/properties/', {
       headers: {
         Authorization: localStorage.getItem("token"),
       }

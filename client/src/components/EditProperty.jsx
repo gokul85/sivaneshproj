@@ -22,7 +22,7 @@ const EditProperty = () => {
         }
         const fetchProperty = async () => {
             try {
-                const response = await axios.get(`http://localhost:5000/api/properties/find/${id}`, {
+                const response = await axios.get(`/api/properties/find/${id}`, {
                     headers: {
                         'Authorization': localStorage.getItem('token'),
                     }
@@ -55,7 +55,7 @@ const EditProperty = () => {
                         'Authorization': `${localStorage.getItem('token')}`
                     }
                 };
-                await axios.put(`http://localhost:5000/api/properties/${id}`, {
+                await axios.put(`/api/properties/${id}`, {
                     propertyName: propertyName,
                     price: price,
                     place: houseAddress,

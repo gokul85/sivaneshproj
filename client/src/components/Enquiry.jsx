@@ -12,7 +12,7 @@ const Enquiry = () => {
     }, []);
 
     const fetchPropertyDetails = () => {
-        axios.get(`http://localhost:5000/api/properties/find/${id}`, {
+        axios.get(`/api/properties/find/${id}`, {
             headers: {
                 Authorization: localStorage.getItem("token"),
             }
@@ -29,7 +29,7 @@ const Enquiry = () => {
     };
 
     const handleInterested = () => {
-        axios.post(`http://localhost:5000/api/properties/${id}/interested`, {}, {
+        axios.post(`/api/properties/${id}/interested`, {}, {
             headers: {
                 Authorization: localStorage.getItem("token"),
             }

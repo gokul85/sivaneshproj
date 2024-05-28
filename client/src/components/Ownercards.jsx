@@ -16,7 +16,7 @@ const Ownercards = () => {
             navigate('/login')
         }
         const fetchCardsData = async () => {
-            await axios.get('http://localhost:5000/api/properties/owner', {
+            await axios.get('/api/properties/owner', {
                 headers: {
                     Authorization: localStorage.getItem('token')
                 }

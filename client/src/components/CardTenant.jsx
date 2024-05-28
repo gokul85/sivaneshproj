@@ -14,7 +14,7 @@ const CardTenant = ({ propertyName, place, area, id, likes }) => {
 
     const handleLike = () => {
         if (!liked) {
-            axios.post(`http://localhost:5000/api/properties/${id}/like`, {}, {
+            axios.post(`/api/properties/${id}/like`, {}, {
                 headers: {
                     Authorization: localStorage.getItem("token"),
                 }

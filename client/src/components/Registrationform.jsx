@@ -25,7 +25,7 @@ const Registrationform = () => {
     }
     const HandleSubmit = () => {
         if (firstName != "" && lastName != "" && email != "" && phone != "" && password != "" && role != "") {
-            axios.post("http://localhost:5000/api/auth/register",
+            axios.post("/api/auth/register",
                 {
                     firstName: firstName,
                     lastName: lastName,

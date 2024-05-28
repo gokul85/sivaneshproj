@@ -64,7 +64,7 @@ const Post = () => {
             'Authorization': `${localStorage.getItem('token')}`
           }
         };
-        await axios.post("http://localhost:5000/api/properties", {
+        await axios.post("/api/properties", {
           propertyName: propertyName,
           price: price,
           place: houseAddress,
